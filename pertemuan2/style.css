@@ -1,0 +1,94 @@
+/* style.css */
+
+/* 🌈 Suasana lembut pastel mint + lavender */
+body {
+    font-family: 'Poppins', 'Comic Sans MS', cursive;
+    background: linear-gradient(135deg, #e4fff3, #f6f0ff, #fff9e6);
+    background-size: 400% 400%;
+    animation: bgmove 10s ease infinite;
+    color: #4a4a4a;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✨ Animasi background lembut */
+@keyframes bgmove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🎀 Judul utama */
+h1 {
+    color: #7b9acc; /* biru lembut */
+    font-size: 55px;
+    text-shadow: 3px 3px #cfd9ff;
+    margin-top: 50px;
+    animation: muncul 1s ease-in-out;
+}
+
+/* ✨ Subjudul */
+h2 {
+    color: #95c8c1;
+    font-size: 26px;
+    margin-top: -8px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    animation: muncul 1.3s ease-in-out;
+}
+
+/* 🩵 Foto profil gemoy */
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 6px solid #bfe8de;
+    box-shadow: 0 0 35px rgba(173, 233, 216, 0.8);
+    object-fit: cover;
+    margin-top: 25px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: muncul 1.6s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 0 45px rgba(153, 220, 201, 1);
+}
+
+p {
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 25px auto;
+    width: 70%;
+    padding: 15px 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(200, 230, 255, 0.5);
+    line-height: 1.6;
+    font-size: 17px;
+    animation: muncul 1.9s ease-in-out;
+}
+
+h3 {
+    color: #7cc7b8;
+    margin-top: 40px;
+    font-size: 24px;
+    text-shadow: 1px 1px #dcf6f0;
+    animation: muncul 2s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e9fff7;
+    width: 55%;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(180, 230, 215, 0.6);
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: muncul 2.2s ease-in-ou
+}
