@@ -125,13 +125,13 @@ h3 {
 }
 
 .hobi-instagram {
-    display: flex;
-    justify-content: center;  
-    align-items: flex-start;   
-    gap: 30px;                
-    flex-wrap: wrap;          
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
     margin: 60px auto;
-    max-width: 8000px;
+    max-width: 1000px;
     padding: 0 20px;
 }
 
