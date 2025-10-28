@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.4s, color 0.4s;
+  margin: 0;
+  padding: 0;
+}
+
+.toolbar {
+  background-color: #ffffff;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+}
+
+.toolbar select,
+.toolbar button {
+  padding: 20px 40px;
+  border: 8px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+.toolbar button:hover,
+.toolbar select:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.03);
+}
+
+/* ===== Container ===== */
+.container {
+  width: 400px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+}
+
+#addTaskBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover {
+  background-color: #1976d2;
+}
+
+/* ===== Task List ===== */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background-color: #e57373;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.dark-mode {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+}
+
+.dark-mode .toolbar {
+  background-color: #1c1c1c;
+  box-shadow: none;
+}
+
+.dark-mode .toolbar button,
+.dark-mode .toolbar select {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #f5f5f5;
+}
+
+.dark-mode .toolbar button:hover,
+.dark-mode .toolbar select:hover {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.dark-mode #taskInput {
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  color: #f5f5f5;
+}
+
+.dark-mode #addTaskBtn {
+  background-color: #3a86ff;
+}
+
+.dark-mode #addTaskBtn:hover {
+  background-color: #1e5fd0;
+}
+
+.dark-mode li {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  color: #f5f5f5;
+}
+
+.dark-mode li.completed {
+  color: #888;
+}
+
+.dark-mode .delete-btn {
+  background-color: #b23b3b;
+}
+
+.dark-mode .delete-btn:hover {
+  background-color: #d9534f;
+}
